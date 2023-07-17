@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJJ Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Controle de Presença</h1>
+  <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno" onkeydown="verificarTecla(event)">
+  <button onclick="cadastroAluno()">Cadastrar aluno</button>
+  <button onclick="atualizarTabela()">Atualizar</button>
+
+
+  <table id="tabelaAlunos">
+    <tr>
+      <th>Ranking</th>
+      <th>Nome</th>
+      <th>Aulas</th>
+      <th>Aproveitamento</th>
+      <th>Status</th>
+      <th>Ações</th>
+    </tr>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
