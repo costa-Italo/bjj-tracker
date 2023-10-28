@@ -1,11 +1,11 @@
-<h1 align="center"> DevLinks </h1>
+<h1 align="center"> BJJ Tracker </h1>
 
 <p align="center">
 APLICAÇÃO FEITA POR ITALO COSTA <br/>
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src=".Print-BJJ-Tracker.png" width="100%">
+  <img alt="projeto DevLinks" src=".github/Print-Bjj-Tracker.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
