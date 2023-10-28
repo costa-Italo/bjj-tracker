@@ -84,9 +84,7 @@ body {
     color: #297bffff;
   }
 
-  tr {
-    box-shadow: 0 5px 10px black;
-  }
+ 
 
   .acao {
     cursor: pointer;
