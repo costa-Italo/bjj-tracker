@@ -1,27 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
 body {
     text-align: center;
-    background-color: #121214;
+    background-color:#f9fbffff; 
   }
 
   h1 {
     margin-top: 50px;
-    color: white;
+    color: black;
   }
 
   input {
     margin-top: 20px;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #00B37E;
-    outline: none;
-    border-radius: 10px;
+    border: none;
+    outline: 1px solid black;
+    border-radius: 8px;
     text-align: center;
     cursor: pointer;
-    font-weight: bold;
-    color: #DEDEE3;
-    background-color: #29292E
+    color: black;
+    background-color:#ffffff;
   }
 
   button {
@@ -29,15 +34,15 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 10px;
-    background-color:#8257E5;
+    background-color:#444857ff;
     border: none;
     color: #DEDEE3;
     cursor: pointer;
-    font-weight: bold;
+  
   }
 
   button:hover {
-   background-color: #2D264A;
+   background-color: rgb(78, 83, 100);
    transition: 0.2s;
   }
 
@@ -46,16 +51,18 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
-    background-color: #202024;
-    border-radius: 10px; /* Adicionado o border-radius */
+    box-shadow: 0 5px 10px black;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 10px;
     cursor: pointer;
   }
 
   th {
     padding: 8px;
     border: none;
-    background-color:#202024;
-    color: #DEDEE3;
+    background-color:white;
+    color: #010101ff;
   }
 
   th:first-child {
@@ -74,13 +81,11 @@ body {
     border-left: none;
     border-right: none;
     border-top: none;
-    color: #DEDEE3;
-    font-weight: bold;
+    color: #297bffff;
   }
 
- 
-  tr:hover{
-    border: 2px solid #015F43;
+  tr {
+    box-shadow: 0 5px 10px black;
   }
 
   .acao {
@@ -90,18 +95,16 @@ body {
     height: 24px;
     line-height: 24px;
     text-align: center;
-    background-color:#202024;
+    background-color:#444857ff;
     color: #DEDEE3;
     font-size: 14px;
     margin-right: 5px;
-    font-weight: bolder;
-    border: 2px solid #8257E5;
-    border-radius: 2px;
+    border-radius: 5px;
   }
 
   .acao:hover {
-    background-color:#2D264A;
-    color: white;
+    background-color: rgb(78, 83, 100);
+    transition: 0.2s;
   }
 
   /* Estilos para as tarjas de status */
@@ -113,28 +116,22 @@ body {
     display: block;
     padding: 8px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   .status-inapto {
-    background-color:#202024;
-    border: 1px solid #ca313f;
-    color: #ca313f;
-    font-weight: bold;
+    background-color:#ffcdd2ff;
+    color: red;
   }
 
   .status-em-analise {
-    background-color:#202024;
-    border: 1px solid #2AC7E3;
-    color: #2AC7E3;
-    font-weight: bold;
+    background-color: #fffd92ff;
+    color: #a68b00ff;
   }
 
   .status-apto {
-    background-color:#202024;
-    border: 1px solid #00B37E;
+    background-color:#c8e6c9ff;
     color: #00B37E;
-    font-weight: bold;
   }
 
   
