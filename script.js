@@ -11,7 +11,6 @@ var linha = tabela.insertRow();
 var celulaRanking = linha.insertCell();
 celulaRanking.innerHTML = "";
 var celulaNome = linha.insertCell();
-celulaNome.innerHTML = "<span class='profile-circle'></span>" + nome; // Adicione o círculo de perfil
 var celulaAulas = linha.insertCell();
 celulaAulas.innerHTML = "1";
 var celulaAproveitamento = linha.insertCell();
@@ -19,9 +18,9 @@ celulaAproveitamento.innerHTML = "0%";
 var celulaStatus = linha.insertCell();
 celulaStatus.innerHTML = "<span class='status-inapto'>Inapto</span>";
 var celulaAcoes = linha.insertCell();
-celulaAcoes.innerHTML = "<span class='acao' onclick='adicionarAula(this)'>+</span> " +
-  "<span class='acao' onclick='subtrairAula(this)'>-</span> " +
-  "<span class='acao' onclick='excluirAluno(this)'>X</span>";
+celulaAcoes.innerHTML = "<span class='acao' onclick='adicionarAula(this)'><i class='bx bxs-upvote' ></i></i></span> " +
+  "<span class='acao' onclick='subtrairAula(this)'><i class='bx bxs-downvote' ></i></span> " +
+  "<span class='acao' onclick='excluirAluno(this)'><i class='bx bxs-trash'></i></span>";
 }
 
   function adicionarAula(elemento) {
@@ -53,18 +52,18 @@ celulaAcoes.innerHTML = "<span class='acao' onclick='adicionarAula(this)'>+</spa
     celulaAproveitamento.innerHTML = aproveitamento.toFixed(2) + "%";
 
     if (aproveitamento < 50) {
-      celulaAproveitamento.style.color = "#ca313f";
+      celulaAproveitamento.style.color = "#ff004a";
       celulaStatus.innerHTML = "<span class='status-inapto'>Inapto</span>";
     } else if (aproveitamento >= 50 && aproveitamento < 70) {
-      celulaAproveitamento.style.color = "#2AC7E3";
+      celulaAproveitamento.style.color = "#01b4ff";
       celulaStatus.innerHTML = "<span class='status-em-analise'>Em análise</span>";
     } else {
-      celulaAproveitamento.style.color = "#00B37E";
+      celulaAproveitamento.style.color = "#388e3c";
       celulaStatus.innerHTML = "<span class='status-apto'>Apto</span>";
     }
 
     if (aproveitamento === 100) {
-      celulaAproveitamento.style.color = "#00B37E";
+      celulaAproveitamento.style.color = "#fff";
       celulaStatus.innerHTML = "<span class='status-apto'>Apto</span>";
     }
   }

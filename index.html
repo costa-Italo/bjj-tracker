@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>BJJ Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Season 24/01</h1>
-  <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno" onkeydown="verificarTecla(event)">
-  <button onclick="cadastroAluno()">Cadastrar aluno</button>
-  <button onclick="atualizarTabela()">Atualizar</button>
 
+  <div class="main-container">
 
-  <table id="tabelaAlunos">
-    <tr>
-      <th>Ranking</th>
-      <th>Nome</th>
-      <th>Aulas</th>
-      <th>Aproveitamento</th>
-      <th>Status</th>
-      <th>Ações</th>
-    </tr>
- 
-    <script src="script.js"></script>
+    <section class="img-container">
+      <img class="logo" src="/assets/Bjj Tracker.png" alt="Bjj tracker logo">
+    </section>
+
+    <section class="input-btn">
+      <input class="input" type="text" id="nomeAluno" placeholder="Digite o nome do aluno" onkeydown="verificarTecla(event)">
+
+      <div class="btn-container">
+        <button class="add-students" onclick="cadastroAluno()"><i class='bx bx-plus'></i></button>
+        <button class="refresh" onclick="atualizarTabela()"><i class='bx bx-refresh' ></i></button>
+      </div>
+    </section>
+
+    <section class="table-container">
+      <table id="tabelaAlunos">
+        <tr>
+          <th class="table-head">Ranking</th>
+          <th class="table-head">Nome</th>
+          <th class="table-head">Aulas</th>
+          <th class="table-head">Aproveitamento</th>
+          <th class="table-head">Status</th>
+          <th class="table-head">Ações</th>
+        </tr>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
