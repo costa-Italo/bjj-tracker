@@ -11,6 +11,7 @@ var linha = tabela.insertRow();
 var celulaRanking = linha.insertCell();
 celulaRanking.innerHTML = "";
 var celulaNome = linha.insertCell();
+celulaNome.innerHTML = nome;
 var celulaAulas = linha.insertCell();
 celulaAulas.innerHTML = "1";
 var celulaAproveitamento = linha.insertCell();
@@ -63,7 +64,7 @@ celulaAcoes.innerHTML = "<span class='acao' onclick='adicionarAula(this)'><i cla
     }
 
     if (aproveitamento === 100) {
-      celulaAproveitamento.style.color = "#fff";
+      celulaAproveitamento.style.color = "";
       celulaStatus.innerHTML = "<span class='status-apto'>Apto</span>";
     }
   }

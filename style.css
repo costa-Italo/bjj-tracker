@@ -59,6 +59,7 @@ table {
   cursor: pointer;
 }
 
+
 th {
   padding: 8px;
   border: none;
@@ -82,7 +83,6 @@ td {
   border-left: none;
   border-right: none;
   border-top: none;
-  color: black;
 }
 
 .status-inapto,
