@@ -164,3 +164,16 @@ td {
       padding: 0.62rem;
     }
   }
+
+  @media screen and (max-width: 375px) {    
+    .title {
+      display: flex;
+      flex-direction: column;
+      width: 30rem;
+      align-items: flex-start;
+    }
+
+    td {
+      padding: 0.62rem;
+    }
+  }
