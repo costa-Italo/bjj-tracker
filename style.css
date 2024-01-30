@@ -24,7 +24,6 @@ body {
     background-color: #201f2b;
     color: white;
 
-       
   }
 
 .bx-data {
@@ -94,7 +93,7 @@ th:last-child {
 }
 
 td {
-  padding: 3rem;
+  padding: 1rem;
   border-left: none;
   border-right: none;
   border-top: none;
