@@ -10,17 +10,31 @@
 }
 body {
     text-align: center;
-    background-color: #ecf0f3; 
+    background-color: white; 
   }
 
-.logo {
-  width: 10rem;
-  height: 10rem;
+  .title {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+    background-color: #201f2b;
+    color: white;
+
+       
+  }
+
+.bx-data {
+  font-size: 1.75rem;
+  padding: 0.5rem;
 }
 
 .input-btn {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 0.25rem;
 }
@@ -54,17 +68,19 @@ table {
   margin-right: auto;
   border-collapse: collapse;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #fafafc;
   border-radius: 10px;
   cursor: pointer;
 }
 
-
 th {
-  padding: 8px;
-  border: none;
-  background-color:white;
-  color: #010101ff;
+  padding: 1rem;
+  background-color:#f4f4fb;
+  color: #999cb1;
+
+  font-size: 0.75rem;
+
+  font-weight: bold;
 }
 
 th:first-child {
@@ -78,11 +94,12 @@ th:last-child {
 }
 
 td {
-  padding: 8px;
-  border-bottom: 1px solid black;
+  padding: 3rem;
   border-left: none;
   border-right: none;
   border-top: none;
+  font-size: 0.75rem;
+  font-weight: bold;
 }
 
 .status-inapto,

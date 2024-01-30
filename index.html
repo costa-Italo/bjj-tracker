@@ -11,18 +11,20 @@
 
   <div class="main-container">
 
-    <section class="img-container">
-      <img class="logo" src="/assets/Bjj Tracker.png" alt="Bjj tracker logo">
+    <section class="title">
+      <h1>BJJ Tracker</h1>
+      <section class="input-btn">
+        
+        <input class="input" type="text" id="nomeAluno" placeholder="Digite o nome do aluno" onkeydown="verificarTecla(event)">
+  
+        <div class="btn-container">
+          <button class="add-students" onclick="cadastroAluno()"><i class='bx bx-plus'></i></button>
+          <button class="refresh" onclick="atualizarTabela()"><i class='bx bx-refresh' ></i></button>
+        </div>
+      </section>
     </section>
 
-    <section class="input-btn">
-      <input class="input" type="text" id="nomeAluno" placeholder="Digite o nome do aluno" onkeydown="verificarTecla(event)">
-
-      <div class="btn-container">
-        <button class="add-students" onclick="cadastroAluno()"><i class='bx bx-plus'></i></button>
-        <button class="refresh" onclick="atualizarTabela()"><i class='bx bx-refresh' ></i></button>
-      </div>
-    </section>
+    
 
     <section class="table-container">
       <table id="tabelaAlunos">
