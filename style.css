@@ -151,3 +151,16 @@ td {
   td:nth-child(5) {
     width: 150px; 
   }
+
+  @media screen and (max-width: 320px) {    
+    .title {
+      display: flex;
+      flex-direction: column;
+      width: 30rem;
+      align-items: flex-start;
+    }
+
+    td {
+      padding: 0.62rem;
+    }
+  }
