@@ -161,4 +161,6 @@ celulaAcoes.innerHTML = "<span class='acao' onclick='adicionarAula(this)'><i cla
     salvarTabela();
   }
 
+  
+
   carregarTabela();

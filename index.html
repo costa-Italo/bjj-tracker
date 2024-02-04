@@ -9,36 +9,72 @@
 </head>
 <body>
 
-  <div class="main-container">
+  <div class="main-conatiner">  <!-- CONTAINER PRINCIPAL -->
 
-    <section class="title">
-      <h1>BJJ Tracker</h1>
-      <section class="input-btn">
-        
-        <input class="input" type="text" id="nomeAluno" placeholder="Digite o nome do aluno" onkeydown="verificarTecla(event)">
-  
-        <div class="btn-container">
-          <button class="add-students" onclick="cadastroAluno()"><i class='bx bx-plus'></i></button>
-          <button class="refresh" onclick="atualizarTabela()"><i class='bx bx-refresh' ></i></button>
+    <nav class="sidebar"> <!-- Sidebar -->     
+      <div class="sidebar-title-container"> <!-- Container do título e subtítulo da sidebar -->
+        <h1 class="sidebar-title"></i>BJJ Tracker</h1> <!-- Título da sidebar -->
+        <p class="sidbar-subtitle">Gestão para jiu-jitsu</p> <!-- Subtítulo da sidebar -->
+    </div>
+
+    <div class="list-container"> <!-- Container da sidebar -->
+      <ul class="list-items"> <!-- Itens sidebar -->
+        <li class="list-items-menu"> <i class='bx bxs-dashboard'><a href="index.html"> </i>Dashboard</li> </a>
+        <li class="list-items-menu"> <i class='bx bxs-user'> <a href="inserir-aluno.html"> </i>Inserir Aluno  </li> </a>
+        <li class="list-items-menu"> <i class='bx bxs-graduation'><a href="universidade.html"> </i>Universidade BJJ</li> </a>
+        <li class="list-items-menu"> <i class='bx bxs-bell-ring'> <a href="notificacoes.html"> </i>Notificações</li> </a>
+      </ul>
+    </div>
+    </nav>
+
+    <!-- DASHBOARD -->
+
+    <div class="user-dashboard"> <!-- Container dashboard -->
+      <div class="card-container"> <!-- Container que vai armazenar os cards -->
+
+        <div class="card-01">        
+          <p class="card-01-title">Número de alunos</p>
+          <p class="card-01-students">10</p>
+          <a href="inserir-aluno.html"><p class="card-01-subtitle">Cadastre um novo aluno</p></a>
         </div>
-      </section>
-    </section>
 
-    
+        <div class="card-02">          
+          <p class="card-02-title">Alunos Aptos</p>
+          <p class="card-2-students">10</p>
+          <a href="listadealunos.html"><p class="card-02-subtitle">Ver lista</p></a>
+        </div>
 
-    <section class="table-container">
-      <table id="tabelaAlunos">
-        <tr>
-          <th class="table-head">Ranking</th>
-          <th class="table-head">Nome</th>
-          <th class="table-head">Aulas</th>
-          <th class="table-head">Aproveitamento</th>
-          <th class="table-head">Status</th>
-          <th class="table-head">Ações</th>
-        </tr>
-    </section>
+        <div class="card-03">          
+          <p class="card-03-title">Universidade BJJ</p>
+          <p class="card-03-content">Os melhores conteúdos do Youtube</p>
+          <a href="inserir-aluno.html"><p class="card-03-subtitle">Ir para universidade</p></a>
+        </div>
 
-  </div>
+      </div> <!-- Container que vai armazenar os cards -->
+
+      <div class="stats-container"> <!-- Container que vai armazenar as estatísticas -->
+
+        <div class="stats-green"> <!-- Container aptos -->                 
+          <p class="stats-green-content">33%</p>
+          <p class="stats-green-legend">Alunos Aptos</p>
+        </div>
+
+        <div class="stats-blue">  <!-- Container análise -->                 
+          <p class="stats-blue-content">33%</p>
+          <p class="stats-blue-legend">Alunos Aptos</p>
+        </div>
+
+        <div class="stats-red"> <!-- Container inaptos -->                
+          <p class="stats-red-content">33%</p>
+          <p class="stats-red-legend">Alunos Aptos</p>
+        </div>
+
+      </div>
+
+
+    </div><!-- Container dashboard -->
+
+  </div> <!-- CONTAINER PRINCIPAL -->
 
   <script src="script.js"></script>
 </body>
