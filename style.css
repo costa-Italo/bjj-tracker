@@ -8,15 +8,40 @@
   box-sizing: border-box;
   font-family: 'Roboto Condensed', sans-serif;
 }
-body {
-    text-align: center;
-    background-color: #ecf0f3; 
-  }
 
-.logo {
-  width: 10rem;
-  height: 10rem;
+
+.header-container {
+  background-color: #3d3d49;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
 }
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+li:hover {
+  color: #e36556;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
 
 .input-btn {
   display: flex;
@@ -135,3 +160,4 @@ td {
   td:nth-child(5) {
     width: 150px; 
   }
+
