@@ -11,37 +11,56 @@
 
 
 .header-container {
-  background-color: #3d3d49;
+  background-color: black;
   color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 1.25rem;
+  padding: 1rem;
   margin-bottom: 1rem;
+}
+
+.header-title-label {
+  color: yellow;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.75rem;
+}
+
+a:hover {
+  color: yellow;
+  font-weight: lighter;
+  transition: 0.2s;
 }
 
 .header-title {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title-label{
+  font-weight: lighter;
+  font-size: 0.75rem;
 }
 
 .header-ul {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 5rem;
   list-style: none;
   font-size: 1rem;
   font-weight: lighter;
   cursor: pointer;
+  margin-top: 1rem;
 }
-
-li:hover {
-  color: #e36556;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
 
 .input-btn {
   display: flex;
@@ -161,3 +180,48 @@ td {
     width: 150px; 
   }
 
+
+  /* ----- UNIVERSIDADE BJJ ----- */
+
+  .universidade-container {
+    padding: 1rem;
+  }
+
+  .universidade-title {
+    margin-top: 1rem;
+  }
+
+  .lista-universidade {
+    color: black;
+    padding: 1rem;
+    transition: 0.1s;
+  }
+
+  .lista-universidade:hover {
+    color: black;
+    font-weight: bolder;
+  }
+
+  ul {
+    list-style: none;  
+  }
+
+  /* ----- CAMPEONATOS ----- */
+
+  .campeonatos-container {
+    padding: 1rem;
+  }
+
+  .campeonato-item {
+    color: black;
+    margin-top: 1rem;
+  }
+
+  .suporte-container {
+    padding: 1rem;
+  }
+
+
+  .dev-ig {
+    color: black;
+  }
