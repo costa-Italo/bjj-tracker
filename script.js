@@ -56,7 +56,7 @@ celulaAcoes.innerHTML = "<span class='acao' onclick='adicionarAula(this)'><i cla
       celulaAproveitamento.style.color = "#ff004a";
       celulaStatus.innerHTML = "<span class='status-inapto'>Inapto</span>";
     } else if (aproveitamento >= 50 && aproveitamento < 70) {
-      celulaAproveitamento.style.color = "#01b4ff";
+      celulaAproveitamento.style.color = "yellow";
       celulaStatus.innerHTML = "<span class='status-em-analise'>Em análise</span>";
     } else {
       celulaAproveitamento.style.color = "#388e3c";

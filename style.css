@@ -9,6 +9,10 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+body {
+  background-color: black;
+}
+
 
 .header-container {
   background-color: black;
@@ -66,30 +70,47 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.5rem;
 }
 
 .input {
   padding: 0.5rem;
-  width: 10rem;
-  font-size: 0.75rem;
-  border: 1px solid black;
+  width: 15rem;
+  font-size: 1rem;
+  border: 1px solid white;
   outline: none;
   border-radius: 0.25rem;
   text-align: center;
   cursor: pointer;
-  color: black;
-  background-color:#ffffff;
+  color: white;
+  background-color:black;
+}
+
+.input:hover {
+  border: 1px solid yellow;
+  color: yellow;
+  transition: 0.2s;
 }
 
 .add-students, .refresh {
   padding: 0.5rem;
-  background-color: #3474f2;
+  background-color: transparent;
   color: #fff;
-  border: none;
+  border: 1px solid white;
   border-radius: 0.2rem;
   outline: none;
   cursor: pointer;
+}
+
+.add-students:hover, .refresh:hover {
+  padding: 0.5rem;
+  background-color: transparent;
+  color: yellow;
+  border: 1px solid yellow;
+  border-radius: 0.2rem;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 table {
@@ -98,17 +119,19 @@ table {
   margin-right: auto;
   border-collapse: collapse;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: black;
   border-radius: 10px;
   cursor: pointer;
+  color: white;
+  font-weight: lighter;
 }
 
 
 th {
   padding: 8px;
   border: none;
-  background-color:white;
-  color: #010101ff;
+  background-color:black;
+  color: white;
 }
 
 th:first-child {
@@ -146,7 +169,6 @@ td {
     justify-content: center;
     height: 1.25rem;
 
-    font-weight: bold;
 
     color: red;    
   }
@@ -157,9 +179,7 @@ td {
     justify-content: center;
     height: 1.25rem;
 
-    font-weight: bold;
-
-    color: #01b2ff;
+    color: yellow;
   }
 
   .status-apto {
@@ -169,7 +189,6 @@ td {
     justify-content: center;
     height: 1.25rem;
 
-    font-weight: bold;
 
     color: #2ca62d;    
   }
