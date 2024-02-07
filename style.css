@@ -206,18 +206,22 @@ td {
     padding: 1rem;
   }
 
+  .universidade-disclaimer {
+    color: white;
+  }
+
   .universidade-title {
     margin-top: 1rem;
   }
 
   .lista-universidade {
-    color: black;
+    color: white;
     padding: 1rem;
     transition: 0.1s;
   }
 
   .lista-universidade:hover {
-    color: black;
+    color: yellow;
     font-weight: bolder;
   }
 
@@ -232,7 +236,7 @@ td {
   }
 
   .campeonato-item {
-    color: black;
+    color: white;
     margin-top: 1rem;
   }
 
@@ -242,5 +246,9 @@ td {
 
 
   .dev-ig {
-    color: black;
+    color: white;
+  }
+
+  .suporte-texto {
+    color: white;
   }
