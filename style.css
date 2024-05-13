@@ -10,107 +10,93 @@
 }
 
 body {
-  background-color: black;
+  background-color: #f7f7f7;
 }
 
 
 .header-container {
-  background-color: black;
+  background-color: #51438f;
   color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   margin-bottom: 1rem;
 }
 
-.header-title-label {
-  color: yellow;
-}
-
-
-a {
-  text-decoration: none;
-  color: white;
-  font-size: 0.75rem;
-}
-
-a:hover {
-  color: yellow;
-  font-weight: lighter;
-  transition: 0.2s;
-}
-
-.header-title {
-  font-size: 1.5rem;
-  font-weight: lighter;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header-title-label{
-  font-weight: lighter;
-  font-size: 0.75rem;
-}
-
-.header-ul {
+.logo-container {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
-  list-style: none;
-  font-size: 1rem;
-  font-weight: lighter;
-  cursor: pointer;
-  margin-top: 1rem;
+  align-items: center;
+  gap: 0.25rem
 }
 
-.input-btn {
-  display: flex;
-  flex-direction: column;
+.frequencia-text {
+  font-size: 2rem;
+}
+
+.user-container {
+  display:flex;
+  flex-direction: row;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
+}
+
+.logo-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.input-title {
+  font-size: 1.5rem;
+  color: #0d234a;
 }
 
 .input {
   padding: 0.5rem;
-  width: 15rem;
+  width: 20rem;
   font-size: 1rem;
-  border: 1px solid white;
   outline: none;
+  border: 0.5px solid #504190;
   border-radius: 0.25rem;
   text-align: center;
   cursor: pointer;
-  color: white;
-  background-color:black;
+  color: #73908d;
+  background-color: white;
 }
 
-.input:hover {
-  border: 1px solid yellow;
-  color: yellow;
-  transition: 0.2s;
+.input-btn {
+  display:flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .add-students, .refresh {
-  padding: 0.5rem;
-  background-color: transparent;
+  width: 6rem;
+  height: 2.5rem;
+  background-color: #51438f;
   color: #fff;
   border: 1px solid white;
   border-radius: 0.2rem;
   outline: none;
   cursor: pointer;
+  font-weight: bold;
 }
 
-.add-students:hover, .refresh:hover {
-  padding: 0.5rem;
-  background-color: transparent;
-  color: yellow;
-  border: 1px solid yellow;
-  border-radius: 0.2rem;
-  outline: none;
-  cursor: pointer;
-  transition: 0.2s;
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 table {
@@ -119,19 +105,20 @@ table {
   margin-right: auto;
   border-collapse: collapse;
   overflow: hidden;
-  background-color: black;
-  border-radius: 10px;
+  background-color: #fff;
+  border-radius: 5px;
   cursor: pointer;
-  color: white;
-  font-weight: lighter;
+  color: #6e7b91;
 }
-
 
 th {
   padding: 8px;
   border: none;
-  background-color:black;
-  color: white;
+  background-color:white;
+  color: #4d5d79;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 8rem;
 }
 
 th:first-child {
@@ -146,7 +133,7 @@ th:last-child {
 
 td {
   padding: 8px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #f3f3f4;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -169,8 +156,8 @@ td {
     justify-content: center;
     height: 1.25rem;
 
-
-    color: red;    
+    color: #e16054; 
+    background: #f5d0cd;   
   }
 
   .status-em-analise {
@@ -179,7 +166,8 @@ td {
     justify-content: center;
     height: 1.25rem;
 
-    color: yellow;
+    background: #f5b93f;
+    color: yellow; 
   }
 
   .status-apto {
@@ -188,67 +176,12 @@ td {
     align-items: center;
     justify-content: center;
     height: 1.25rem;
-
-
-    color: #2ca62d;    
+    background: #d2ebd3;
+    color: #6ec073;    
   }
 
 
   th:nth-child(5),
   td:nth-child(5) {
     width: 150px; 
-  }
-
-
-  /* ----- UNIVERSIDADE BJJ ----- */
-
-  .universidade-container {
-    padding: 1rem;
-  }
-
-  .universidade-disclaimer {
-    color: white;
-  }
-
-  .universidade-title {
-    margin-top: 1rem;
-  }
-
-  .lista-universidade {
-    color: white;
-    padding: 1rem;
-    transition: 0.1s;
-  }
-
-  .lista-universidade:hover {
-    color: yellow;
-    font-weight: bolder;
-  }
-
-  ul {
-    list-style: none;  
-  }
-
-  /* ----- CAMPEONATOS ----- */
-
-  .campeonatos-container {
-    padding: 1rem;
-  }
-
-  .campeonato-item {
-    color: white;
-    margin-top: 1rem;
-  }
-
-  .suporte-container {
-    padding: 1rem;
-  }
-
-
-  .dev-ig {
-    color: white;
-  }
-
-  .suporte-texto {
-    color: white;
   }

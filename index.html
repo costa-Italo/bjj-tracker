@@ -10,34 +10,53 @@
 <body>
 
   <div class="main-container">
-
     <header class="header-container">
-      <div class="container-title">
-        <H1 class="header-title">NÃO DESISTA!</span>
-          <label class="header-title-label">Temporada 2024 /01</label></H1>
+      <div class="logo-container">
+        <i class='bx bx-data' style="font-size: 30px;"></i>
+        <p>BJJ Tracker</p>
       </div>
-    </header>
-
-    <section class="input-btn">
-      <input class="input" type="text" id="nomeAluno" placeholder="Digite o nome do aluno" onkeydown="verificarTecla(event)">
-
-      <div class="btn-container">
-        <button class="add-students" onclick="cadastroAluno()">Inserir Aluno</button>
-        <button class="refresh" onclick="atualizarTabela()">Atualizar Dados</button>
+      <div class="frequencia-container">
+        <p class="frequencia-text">Student attendance</p>
       </div>
-    </section>
+      
+      <div class="user-container">
+        <img src="./assets/ecbjj-logo.jpeg" alt="User" class="logo-image">
+        <p>Welcome Equipe Eisler Cardoso</p>
+      </div>
+    </header> 
 
+    <div class="input-container">
+      <section class="input-btn">
+        <p class="input-title">New Student</p>
+        <input 
+          class="input" 
+          type="text" 
+          id="nomeAluno" 
+          placeholder="Enter the student's name" 
+          onkeydown="verificarTecla(event)" 
+        />
+        <button class="add-students" onclick="cadastroAluno()">Add New</button>
+        <button class="refresh" onclick="atualizarTabela()"> Filter</button>
+      </section>
+
+
+  </div>
+
+  
     <section class="table-container">
       <table id="tabelaAlunos">
         <tr>
           <th class="table-head">Ranking</th>
-          <th class="table-head">Nome</th>
-          <th class="table-head">Aulas</th>
-          <th class="table-head">Aproveitamento</th>
+          <th class="table-head">Name</th>
+          <th class="table-head">Classes</th>
+          <th class="table-head">Evolution</th>
           <th class="table-head">Status</th>
-          <th class="table-head">Ações</th>
+          <th class="table-head">Actions</th>
         </tr>
     </section>
+
+
+
 
   </div>
 

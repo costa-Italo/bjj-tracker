@@ -53,14 +53,14 @@ celulaAcoes.innerHTML = "<span class='acao' onclick='adicionarAula(this)'><i cla
     celulaAproveitamento.innerHTML = aproveitamento.toFixed(2) + "%";
 
     if (aproveitamento < 50) {
-      celulaAproveitamento.style.color = "#ff004a";
-      celulaStatus.innerHTML = "<span class='status-inapto'>Inapto</span>";
+      celulaAproveitamento.style.color = "#6e7b91";
+      celulaStatus.innerHTML = "<span class='status-inapto'>unfit</span>";
     } else if (aproveitamento >= 50 && aproveitamento < 70) {
-      celulaAproveitamento.style.color = "yellow";
-      celulaStatus.innerHTML = "<span class='status-em-analise'>Em análise</span>";
+      celulaAproveitamento.style.color = "#6e7b91";
+      celulaStatus.innerHTML = "<span class='status-em-analise'>review</span>";
     } else {
-      celulaAproveitamento.style.color = "#388e3c";
-      celulaStatus.innerHTML = "<span class='status-apto'>Apto</span>";
+      celulaAproveitamento.style.color = "#6e7b91";
+      celulaStatus.innerHTML = "<span class='status-apto'>fit</span>";
     }
 
     if (aproveitamento === 100) {
